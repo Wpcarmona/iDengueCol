@@ -1,0 +1,104 @@
+<div class="body">  
+
+  <div class="center" (click)="bajar()">
+    <ion-icon class="btn-x" name="close-circle-outline" style="width: 50px; height: 50px" color="light" id="btn-x"></ion-icon>
+  </div>
+  <div id="backbutton" style="width: 25px; height: 25px; position: absolute; left: 16px; top: 16px;" (click)="home()">
+    <ion-icon name="arrow-back-sharp" style="width: 25px; height:25px" color="light"></ion-icon>
+  </div>
+  <div class="sea" id="sea" >
+    <div class="circle-wrapper">
+        <div class="bubble"></div>
+        <div class="submarine-wrapper">
+            <div class="submarine-body">
+                <div class="window"></div>
+                <div class="engine"></div>
+                <div class="light"></div>
+            </div>
+            <div class="helix"></div>
+            <div class="hat">
+              <div class="leds-wrapper">
+                  <div class="periscope"></div>
+                  <div class="leds"></div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  <div class="content" id="up">
+    
+    <div class="margins">
+      <div class="btn" (click)="subir()" id="btn" style="margin-top: 20%; margin-bottom: 16px">
+        <h5>Iniciar sesión</h5>
+      </div>
+      <div class="btn-secondary" (click)="subir()" id="btn-secondary">
+        <h5>olvidaste la contraseña</h5>
+      </div>
+      
+     <div class="position-form">
+      <div class="form" id="form">
+        <div class="contact_form" scrolly="true" style="max-height:600px;">
+
+          <div class="formulario">			
+            <h1>iniciar sesión</h1>
+
+                <form action="submeter-formulario.php" method="post">				
+                      <p hidden>
+                        <label for="nombre" class="colocar_nombre">Nombre
+                          <span class="obligatorio">*</span>
+                        </label>
+                          <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                      </p>
+                    
+                      <p>
+                        <label for="email" class="colocar_email">Correo
+                          <span class="obligatorio">*</span>
+                        </label>
+                          <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Correo">
+                      </p>
+
+                      <p>
+                        <label for="website" class="colocar_website">Contraseña
+                          <span class="obligatorio">*</span>
+                        </label>
+                          <input type="password" name="introducir_website" id="website" required="obligatorio" placeholder="Escribe la contraseña">
+                      </p>	
+                  
+                      <p hidden>
+                        <label for="telefone" class="colocar_telefono">Teléfono
+                        </label>
+                          <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                      </p>		
+                  	
+                      <p hidden>
+                        <label for="asunto" class="colocar_asunto">Asunto
+                          <span class="obligatorio">*</span>
+                        </label>
+                          <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                      </p>		
+                    
+                      <p hidden>
+                        <label for="mensaje" class="colocar_mensaje">Mensaje
+                          <span class="obligatorio">*</span>
+                        </label>                     
+                          <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                      </p>	  								
+                    
+                      <div class="btn"><h5 style="color:white">Enviar</h5></div>
+  
+                      <div hidden>
+                        <p class="aviso" >
+                          <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>			
+                      </div>
+                      
+                      
+                </form>
+          </div>	
+        </div>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>

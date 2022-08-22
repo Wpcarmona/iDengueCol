@@ -1,0 +1,659 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+.body{
+    background-color: #9a24eb;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+  }
+  
+  .content{
+    position: absolute;
+    bottom: 0px;
+    height: 35%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    background-color: white;
+    animation-name: up;
+    animation-duration: 2s;
+    
+  }
+  
+  
+  .btn{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #9a24eb;
+    text-align: center;
+    border: 1px solid #9a24eb;
+    color: white;
+  }
+  
+  .btn-secondary{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid #9a24eb;
+    color: #9a24eb;
+  }
+  
+  .opacitybtn1{
+    width: 100%;
+    height: 35px;
+    border-radius: 25px;
+    background-color: #9a24eb;
+    text-align: center;
+    align-items: center;
+    color: white;
+    align-content: center;
+    align-self: center;
+  }
+  
+  .center{
+    margin-top: 8px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  
+  .margins{
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  
+  .elementhidden{
+    visibility: hidden;
+  }
+  
+  
+  
+  @keyframes up {
+    0% {
+      max-height: 0px;
+  }
+  
+  100% {
+      max-height: 40%;
+  }
+  }
+  
+  
+  .form{
+    opacity: 0;
+  }
+  
+  div[scrollx=true],div[scrolly=true] {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  div[scrollx=true] {
+   overflow-x: auto;
+  }
+  
+  div[scrolly=true] {
+   overflow-y: auto;
+  }
+  
+  .btn-x{
+    opacity: 0;
+  }
+  
+  
+  .css-square {
+    position: absolute;
+    right: 24px;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;  
+  }
+  
+  .header{
+    position: absolute;
+    top: 20px;
+    width: fill;
+    height: 80px;
+    margin-left: 16px;
+    margin-right: 16px;
+    background-color: white;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .subcontainer{
+    position: absolute;
+    top: 75px;
+    width: fill;
+    height: 0px;
+    margin-left: 16px;
+    margin-right: 16px;
+    background-color: white;
+    border-radius: 0px 0px 5px 5px;
+    z-index: -1;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    padding-top: 25px;
+    background-color: white;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  
+  
+  //--------------------------------------------------------------------//
+  
+  .contact_form{	
+      width: fill; 
+    height: auto;
+    margin: 80px auto;
+      border-radius: 10px;  
+      padding-top: 30px;
+      padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px; 
+    padding-right: 30px; 
+    overflow-y: scroll;
+  }
+  
+  
+  input{
+      background-color: #fbfbfb; 
+      width: fill; 
+      height: 40px; 
+      border-radius: 5px;  
+      border-style: solid; 
+      border-width: 1px; 
+      border-color: #9a24eb; 
+      margin-top: 10px;  
+      padding-left: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  
+  textarea{
+    background-color: #fbfbfb; 
+      width: fill; 
+      height: 150px; 
+      border-radius: 5px;  
+      border-style: solid; 
+      border-width: 1px; 
+      border-color: #9a24eb; 
+      margin-top: 10px;  
+      padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+      float: center; 	
+  }
+  
+  
+  button{
+      height: 45px; 
+      padding-left: 5px;
+      padding-right: 5px; 	
+      margin-bottom: 20px; 
+      margin-top: 10px; 	
+      text-transform: uppercase;
+      background-color: #9a24eb; 
+      border-color: #9a24eb; 
+      border-style: solid; 
+      border-radius: 10px;	
+      width: 420px;   
+    cursor: pointer;
+  }
+  
+  
+  button p{
+      color: #fff; 
+  }
+  
+  
+  span{
+      color: #9a24eb; 
+  }
+  
+  
+  .aviso{
+      font-size: 13px;  
+      color: #0e0e0e;  
+  }
+  
+  
+  h1{
+      font-size: 25px;  
+      text-align: letf; 
+      padding-bottom: 20px; 
+      color: #9a24eb;
+  }
+  
+  
+  h3{
+      font-size: 16px; 
+      padding-bottom: 30px;
+      color: #0e0e0e;   
+  }
+  
+  
+  p{
+      font-size: 14px; 
+      color: #0e0e0e; 
+  }
+  
+  
+  ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  .formulario input:focus{
+      outline:0;
+      border: 1px solid #97d848;
+    overflow-y: scroll;
+  }
+  
+  
+  .formulario textarea:focus{
+      outline:0;
+      border: 1px solid #97d848;
+    overflow-y: scroll;
+  }
+  
+  //--------------------------------------------------------------------------------//@at-root
+  
+  $color1: #306D85;
+  $color2: #D93A54;
+  
+  body {
+      background-color: $color1;
+      
+  
+  }
+  
+  *, *:before, *:after {
+      box-sizing: border-box;
+  }
+  
+  
+  .sea {
+      margin: 40px auto 0 auto;
+      overflow: hidden;
+      
+      .bubble {
+          position: absolute;
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background-color: lighten($color1, 25%);
+          opacity: 0.9;
+          animation: bubble1-h-movement 1s ease-in infinite, bubble1-v-movement 300ms ease-in-out infinite alternate, bubble-scale-movement 300ms ease-in-out infinite alternate;
+          
+          &:after {
+              position: absolute;
+              content: "";
+              width: 7px;
+              height: 7px;
+              border-radius: 50%;
+              background-color: lighten($color1, 25%);
+              opacity: 0.9;
+              
+          }
+          &:after {
+            top: -20;
+            left:100px;
+            width: 9px;
+            height: 9px;
+          }
+          
+  
+      }
+      
+      .circle-wrapper {
+          position: relative;
+          background: linear-gradient(darken($color1, 3%), darken($color1, 12%));
+          width:300px;
+          height:300px;
+          margin: 10px auto 0 auto;
+          overflow: hidden;
+          z-index: 0;
+          border-radius:50%;
+          padding: 0 50px 0 50px;
+          border: 6px solid lighten($color1, 10%);
+          
+      }
+      
+      .submarine-wrapper {
+          height: 300px;
+          width: 300px;
+          padding: 30px 50px 30px 150px;
+          margin: 0 auto 0 auto;
+          animation: diving 3s ease-in-out infinite, diving-rotate 3s ease-in-out infinite;
+          
+         .submarine-body {
+             
+             width: 150px;
+             height: 80px;
+             position: absolute;
+             margin-top: 50px;
+             left: 25px;
+             background-color: $color2;
+             border-radius: 40px;
+             background: linear-gradient($color2, darken($color2, 10%));
+             
+             .light {
+                  position:absolute;
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
+                  border-width: 0 40px 150px 40px;
+                  border-color: transparent transparent lighten($color1,5%) transparent;
+                 
+                  transform: rotate(-50deg);
+                 top:40px;
+                 left:99%;
+                 
+                 &:after {
+                     content:"";
+                     position: absolute;
+                     width: 20px;
+                     height:13px;
+                     border-radius:5px;
+                     background-color:darken($color2, 5%);
+                     margin-left:-10px;
+                 }
+  
+             }
+             
+             .window {
+                 width: 37px;
+                 height: 37px;
+                 position: absolute;
+                 margin-top: 23px;
+                 right: 18px;
+                 background: linear-gradient(darken($color1, 13%), darken($color1, 18%));
+                 border-radius: 50%;
+                 border: 3px solid $color2;
+                 
+                  &:after {
+                    content: "";
+                    position: absolute;
+                    margin-top:3px;
+                    margin-left:3px;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    opacity:0.8;
+                    border-top:3px solid white;
+                    transform:rotate(-45deg); 
+                  }
+             }
+             
+             .engine {
+                 width: 30px;
+                 height: 30px;
+                 position: absolute;
+                 margin-top: 32px;
+                 left: 53px;
+                 background-color: darken($color2, 10%);
+                 border-radius: 50%;
+                 border: 5px solid $color2;
+                 
+                 &:after, &:before {
+                    position: absolute;
+                    content: "";
+                    border-radius: 2px;
+                    background-color: white;
+                    animation:spin 900ms linear infinite;
+                    opacity:0.8;
+                  }
+                  &:after {
+                    top:8px;
+                    width: 20px;
+                    height: 4px;
+                    
+                  }
+                  &:before {
+                    left:8px;
+                    width: 4px;
+                    height: 20px;
+                    
+                  }
+             }
+         }
+         
+          .helix {
+             width: 30px;
+             height: 70px;
+             position: absolute;
+             margin-top: 55px;
+             left:0;
+             background-color: $color2;
+             border-radius: 7px;
+             background: linear-gradient($color2, darken($color2, 10%));
+             
+              &:after {
+                  content: "";
+                  position: absolute;
+                  margin-top:5px;
+                  margin-left:7px;
+                  width: 17px;
+                  height: 60px;
+                  border-radius: 3px;
+                  background-color: transparent;
+                  opacity:0.8;
+                  background: linear-gradient(
+                    to bottom,
+                    $color2,
+                    $color2 50%,
+                    lighten($color2, 15%) 50%,
+                    lighten($color2, 15%)
+                  );
+                  background-size: 100% 20px;
+                  animation:helix-movement 110ms linear infinite;
+  
+              }
+          }
+          
+          
+          .hat {
+             width: 65px;
+             height: 25px;
+             position: absolute;
+             margin-top: 26px;
+             left:70px;
+             background-color: $color2;
+             border-radius: 10px 10px 0 0;
+             background: linear-gradient($color2, darken($color2, 3%));
+             
+              .periscope {
+                  position: absolute;
+                  width: 7px;
+                  height: 20px;
+                  background-color: $color2;
+                  margin-top: -27px;
+                  margin-left:32px;
+                  border-radius:5px 5px 0 0;
+                  
+                  &:after, &:before {
+                      content: "";
+                      position: absolute;
+                      width: 15px;
+                      height: 7px;
+                      border-radius: 5px;
+                      background-color: $color2;
+                  }
+              }
+              
+              .leds-wrapper {
+                 width: 53px;
+                 height: 13px;
+                 position: relative;
+                 top:7px;
+                 left:7px;
+                 background-color: $color2;
+                 border-radius: 10px;
+                 background: linear-gradient(darken($color2, 12%), darken($color2, 16%));
+                  
+                  .leds {
+                      position: absolute;
+                      margin-top:4px;
+                      margin-left:7px;
+                      width: 5px;
+                      height: 5px;
+                      border-radius: 50%;
+                      background-color: white;
+                      animation:leds-off 500ms linear infinite;
+  
+                      &:after, &:before {
+                          content: "";
+                          position: absolute;
+                          width: 5px;
+                          height: 5px;
+                          border-radius: 50%;
+                          background-color: white;
+                      }
+                      &:after {
+                          margin-top:0px;
+                          margin-left:17px;
+                      }
+                      &:before {
+                          margin-top:0px;
+                          margin-left:34px;
+                      }
+                  }
+              }
+          }
+          
+          
+      }
+  }
+  
+  
+  @keyframes spin { 
+      100% { 
+          transform:rotate(360deg); 
+      } 
+  }
+  
+  @keyframes leds-off { 
+      100% { 
+          opacity:0.3;
+      } 
+  }
+  
+  @keyframes helix-movement {
+      100% {
+          background: linear-gradient(
+            to bottom,
+            lighten($color2, 15%) 50%,
+            lighten($color2, 15%),
+            $color2,
+            $color2 50%
+          );
+          background-size: 100% 20px;
+      }
+  }
+  
+  
+  @keyframes diving {
+    0% {
+           margin-top:5px;
+    }
+      50% {
+       margin-top:15px;
+    }
+      
+      100% {
+       margin-top:5px;
+    }
+  }
+  
+  @keyframes diving-rotate {
+    0% {
+           transform:rotate(0deg); 
+    }
+      50% {
+           transform:rotate(3deg); 
+    }
+      75% {
+          transform:rotate(-2deg); 
+    }
+      100% {
+          transform:rotate(0deg); 
+    }
+  }
+  
+      @keyframes bubble1-h-movement {
+      0% { 
+            margin-left: 80%;
+        }
+      100% { 
+             margin-left: -100%; 
+        }
+    } 
+  
+      @keyframes bubble2-h-movement {
+      0% { 
+            margin-left: 65%;
+        }
+      100% { 
+             margin-left: -5%; 
+        }
+    }
+  
+    @keyframes bubble1-v-movement {
+      0% { 
+            margin-top: 115px; 
+        }
+      100% { 
+            margin-top:160px; 
+        }
+    }
+      
+      @keyframes bubble2-v-movement {
+      0% { 
+            margin-top: 115px; 
+        }
+      100% { 
+            margin-top:90px; 
+        }
+    }
+  
+      @keyframes bubble-scale-movement {
+      0% { 
+            transform: scale(1.4);
+        }
+      100% { 
+            transform: scale(0.9);
+        }
+    }
+  
+      @keyframes light-movement {
+      0% { 
+            transform: rotate(-40deg);
+        }
+        50% {
+            transform: rotate(-70deg);
+        }
+      100% { 
+            transform: rotate(-40deg);
+        }
+    }
